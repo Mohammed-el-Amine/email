@@ -12,11 +12,11 @@ let transporter = nodemailer.createTransport({
     host: '146.59.14.191', // remplacer avec le nom d'hôte de votre serveur SMTP
     port: 8025, // remplacer avec le port de votre serveur SMTP
     secure: false,
-    auth: {
+	auth: {
         user: 'root', // remplacer avec votre nom d'utilisateur
         pass: 'root' // remplacer avec votre mot de passe
     }
-});
+   });
 
 app.post('/send', (req, res) => {
     // Récupérer les données du formulaire
