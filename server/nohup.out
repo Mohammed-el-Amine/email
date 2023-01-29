@@ -1,0 +1,112 @@
+/home/ubuntu/Home/email/server/server.py:21: DeprecationWarning: There is no current event loop
+  loop = asyncio.get_event_loop()
+Traceback (most recent call last):
+  File "/home/ubuntu/Home/email/server/server.py", line 22, in <module>
+    controller.start()
+  File "/usr/local/lib/python3.10/dist-packages/aiosmtpd/controller.py", line 293, in start
+    raise self._thread_exception
+  File "/usr/local/lib/python3.10/dist-packages/aiosmtpd/controller.py", line 254, in _run
+    srv: AsyncServer = self.loop.run_until_complete(self.server_coro)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 646, in run_until_complete
+    return future.result()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1505, in create_server
+    raise OSError(err.errno, 'error while attempting '
+OSError: [Errno 98] error while attempting to bind on address ('146.59.14.191', 8025): address already in use
+/home/ubuntu/Home/email/server/server.py:21: DeprecationWarning: There is no current event loop
+  loop = asyncio.get_event_loop()
+Je suis connecter à mon server OVH : vps-f9c60122.vps.ovh.net
+Traceback (most recent call last):
+  File "/home/ubuntu/Home/email/server/server.py", line 24, in <module>
+    loop.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 600, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1860, in _run_once
+    event_list = self._selector.select(timeout)
+  File "/usr/lib/python3.10/selectors.py", line 469, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
+KeyboardInterrupt
+/home/ubuntu/Home/email/server/server.py:27: DeprecationWarning: There is no current event loop
+  loop = asyncio.get_event_loop()
+('92.184.117.127', 39322) SMTP session exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiosmtpd/smtp.py", line 741, in _handle_client
+    await method(arg)
+  File "/usr/local/lib/python3.10/dist-packages/aiosmtpd/smtp.py", line 1460, in smtp_DATA
+    status = await self._call_handler_hook('DATA')
+  File "/usr/local/lib/python3.10/dist-packages/aiosmtpd/smtp.py", line 473, in _call_handler_hook
+    status = await hook(self, self.session, self.envelope, *args)
+  File "/home/ubuntu/Home/email/server/server.py", line 17, in handle_DATA
+    message['From'] = envelope.mail_from
+UnboundLocalError: local variable 'message' referenced before assignment
+('92.184.117.127', 49116) SMTP session exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiosmtpd/smtp.py", line 741, in _handle_client
+    await method(arg)
+  File "/usr/local/lib/python3.10/dist-packages/aiosmtpd/smtp.py", line 1460, in smtp_DATA
+    status = await self._call_handler_hook('DATA')
+  File "/usr/local/lib/python3.10/dist-packages/aiosmtpd/smtp.py", line 473, in _call_handler_hook
+    status = await hook(self, self.session, self.envelope, *args)
+  File "/home/ubuntu/Home/email/server/server.py", line 17, in handle_DATA
+    message['From'] = envelope.mail_from
+UnboundLocalError: local variable 'message' referenced before assignment
+Je suis connecter à mon server OVH : vps-f9c60122.vps.ovh.net
+Traceback (most recent call last):
+  File "/home/ubuntu/Home/email/server/server.py", line 30, in <module>
+    loop.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 600, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1860, in _run_once
+    event_list = self._selector.select(timeout)
+  File "/usr/lib/python3.10/selectors.py", line 469, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
+KeyboardInterrupt
+/home/ubuntu/Home/email/server/server.py:24: DeprecationWarning: There is no current event loop
+  loop = asyncio.get_event_loop()
+('92.184.117.127', 45672) SMTP session exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/aiosmtpd/smtp.py", line 741, in _handle_client
+    await method(arg)
+  File "/usr/local/lib/python3.10/dist-packages/aiosmtpd/smtp.py", line 1460, in smtp_DATA
+    status = await self._call_handler_hook('DATA')
+  File "/usr/local/lib/python3.10/dist-packages/aiosmtpd/smtp.py", line 473, in _call_handler_hook
+    status = await hook(self, self.session, self.envelope, *args)
+  File "/home/ubuntu/Home/email/server/server.py", line 15, in handle_DATA
+    message['From'] = envelope.mail_from
+UnboundLocalError: local variable 'message' referenced before assignment
+Connecté à mon server OVH : vps-f9c60122.vps.ovh.net
+Traceback (most recent call last):
+  File "/home/ubuntu/Home/email/server/server.py", line 27, in <module>
+    loop.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 600, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1860, in _run_once
+    event_list = self._selector.select(timeout)
+  File "/usr/lib/python3.10/selectors.py", line 469, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
+KeyboardInterrupt
+/home/ubuntu/Home/email/server/server.py:20: DeprecationWarning: There is no current event loop
+  loop = asyncio.get_event_loop()
+Je suis connecter à mon server OVH : vps-f9c60122.vps.ovh.net
+Traceback (most recent call last):
+  File "/home/ubuntu/Home/email/server/server.py", line 23, in <module>
+    loop.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 600, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1860, in _run_once
+    event_list = self._selector.select(timeout)
+  File "/usr/lib/python3.10/selectors.py", line 469, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
+KeyboardInterrupt
+/home/ubuntu/Home/email/server/server.py:23: DeprecationWarning: There is no current event loop
+  loop = asyncio.get_event_loop()
+Je suis connecter à mon server OVH : vps-f9c60122.vps.ovh.net
+Traceback (most recent call last):
+  File "/home/ubuntu/Home/email/server/server.py", line 26, in <module>
+    loop.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 600, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1860, in _run_once
+    event_list = self._selector.select(timeout)
+  File "/usr/lib/python3.10/selectors.py", line 469, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
+KeyboardInterrupt
